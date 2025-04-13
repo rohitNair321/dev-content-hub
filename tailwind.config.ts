@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -43,7 +44,11 @@ export default {
         ring: '#72BF78',
         muted: {
           DEFAULT: '#D3EE98',
-          foreground: '#000000',
+          foreground: '#464646',
+        },
+        destructive: {
+          DEFAULT: '#dc2626',
+          foreground: '#FFFFFF',
         },
       },
       borderRadius: {
