@@ -51,6 +51,37 @@
   }
 }
 
+/* Add explicit class definitions for text colors */
+@layer utilities {
+  .text-foreground {
+    color: rgb(var(--foreground));
+  }
+  
+  .text-primary-foreground {
+    color: rgb(var(--primary-foreground));
+  }
+  
+  .text-secondary-foreground {
+    color: rgb(var(--secondary-foreground));
+  }
+  
+  .text-card-foreground {
+    color: rgb(var(--card-foreground));
+  }
+  
+  .text-muted-foreground {
+    color: rgb(var(--muted-foreground));
+  }
+  
+  .text-accent-foreground {
+    color: rgb(var(--accent-foreground));
+  }
+  
+  .text-destructive-foreground {
+    color: rgb(var(--destructive-foreground));
+  }
+}
+
 .animate-in {
   animation: fadeIn 0.5s ease-out forwards;
 }
