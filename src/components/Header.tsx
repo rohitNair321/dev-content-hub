@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { ThemeToggle } from './ThemeToggle';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,14 +38,17 @@ const Header = () => {
 
         {isMobile ? (
           <>
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              onClick={toggleMobileMenu}
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? <X /> : <Menu />}
-            </Button>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={toggleMobileMenu}
+                aria-label="Toggle menu"
+              >
+                {mobileMenuOpen ? <X /> : <Menu />}
+              </Button>
+            </div>
             
             {mobileMenuOpen && (
               <div className="fixed inset-0 top-16 bg-background/95 backdrop-blur-sm animate-in">
@@ -64,20 +68,23 @@ const Header = () => {
             )}
           </>
         ) : (
-          <nav className="flex items-center gap-6">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-medium hover:text-primary transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
+          <div className="flex items-center gap-6">
+            <nav className="flex items-center gap-6">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-sm font-medium hover:text-primary transition-colors"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </nav>
+            <ThemeToggle />
             <Button>
               Resume
             </Button>
-          </nav>
+          </div>
         )}
       </div>
     </header>
