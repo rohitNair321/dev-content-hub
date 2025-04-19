@@ -10,11 +10,11 @@ const Hero = () => {
           <div className="animate-in">
             <p className="text-primary font-medium mb-2">Hello, I'm</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              John Developer
+              Rohit Nair
             </h1>
             <div className="mb-6">
               <span className="text-2xl md:text-3xl font-semibold block mb-1">Frontend Developer</span>
-              <span className="text-muted-foreground text-lg">Specialized in Angular & Learning Node.js</span>
+              <span className="text-muted-foreground text-lg">Specialized in Angular & Node.js</span>
             </div>
             <p className="text-muted-foreground mb-8 max-w-md">
               I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
