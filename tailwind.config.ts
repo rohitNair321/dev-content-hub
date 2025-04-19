@@ -23,33 +23,35 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
+        background: "rgb(var(--background))",
+        foreground: "rgb(var(--foreground))",
         primary: {
-          DEFAULT: '#72BF78',
-          foreground: '#FFFFFF',
+          DEFAULT: "rgb(var(--primary))",
+          foreground: "rgb(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: '#A0D683',
-          foreground: '#000000',
+          DEFAULT: "rgb(var(--secondary))",
+          foreground: "rgb(var(--secondary-foreground))",
+        },
+        card: {
+          DEFAULT: "rgb(var(--card))",
+          foreground: "rgb(var(--card-foreground))",
+        },
+        muted: {
+          DEFAULT: "rgb(var(--muted))",
+          foreground: "rgb(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: '#D3EE98',
-          foreground: '#000000',
-        },
-        background: {
-          DEFAULT: '#FEFF9F',
-          foreground: '#000000',
-        },
-        border: '#72BF78',
-        input: '#A0D683',
-        ring: '#72BF78',
-        muted: {
-          DEFAULT: '#D3EE98',
-          foreground: '#464646',
+          DEFAULT: "rgb(var(--accent))",
+          foreground: "rgb(var(--accent-foreground))",
         },
         destructive: {
-          DEFAULT: '#dc2626',
-          foreground: '#FFFFFF',
+          DEFAULT: "rgb(var(--destructive))",
+          foreground: "rgb(var(--destructive-foreground))",
         },
+        border: "rgb(var(--border))",
+        input: "rgb(var(--input))",
+        ring: "rgb(var(--ring))",
       },
       borderRadius: {
         lg: 'var(--radius)',
