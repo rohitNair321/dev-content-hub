@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Redirect with the correct base path
+    const basePath = '/dev-content-hub/';
+    const path = window.location.pathname.replace(basePath, '');
+    const redirectUrl = basePath + '?p=' + path;
+    window.location.replace(redirectUrl);
+  </script>
+</head>
+<body>
+  <p>Redirecting to homepage...</p>
+</body>
+</html>
