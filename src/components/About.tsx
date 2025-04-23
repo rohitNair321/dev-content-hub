@@ -35,7 +35,7 @@ const About = () => {
               I believe in sharing knowledge and contributing to the developer community.
             </p>
             <Button asChild>
-              <a href="/resume.pdf" download>
+              <a href="/Rohit.Nair.pdf" download>
                 <Download className="mr-2 h-4 w-4" /> Download Resume
               </a>
             </Button>

@@ -82,7 +82,9 @@ const Header = () => {
             </nav>
             <ThemeToggle />
             <Button>
-              Resume
+              <a href="/Rohit.Nair.pdf" download>
+                Resume
+              </a>
             </Button>
           </div>
         )}

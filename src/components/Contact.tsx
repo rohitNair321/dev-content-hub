@@ -46,19 +46,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-8 w-8 text-primary" />,
       title: "Email",
-      value: "contact@johndeveloper.com",
-      link: "mailto:contact@johndeveloper.com"
+      value: "rohit123nair@gmail.com",
+      link: "mailto:rohit123nair@gmail.com"
     },
     {
       icon: <Phone className="h-8 w-8 text-primary" />,
       title: "Phone",
-      value: "+1 (123) 456-7890",
-      link: "tel:+11234567890"
+      value: "+91 8668671077",
+      link: "tel:+918668671077"
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,
       title: "Location",
-      value: "New York, NY, USA",
+      value: "Hinjewadi, Pune, Maharashtra, India",
       link: "#"
     }
   ];
@@ -112,7 +112,7 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="John Doe"
+                        placeholder="Rohit Nair"
                         required
                       />
                     </div>
@@ -126,7 +126,7 @@ const Contact = () => {
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="john@example.com"
+                        placeholder="rohit123nair@gmail.com"
                         required
                       />
                     </div>

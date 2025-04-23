@@ -6,9 +6,8 @@ const Footer = () => {
   
   const socialLinks = [
     { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
-    { icon: <Mail className="h-5 w-5" />, href: "mailto:contact@example.com", label: "Email" }
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/rohit-nair-007408217", label: "LinkedIn" },
+    { icon: <Mail className="h-5 w-5" />, href: "mailto:rohit123nair@gmail.com", label: "Email" }
   ];
 
   const navLinks = [
@@ -65,15 +64,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-muted-foreground space-y-2">
-              <p>New York, NY, USA</p>
+              <p>Hinjewadi, Pune, Maharashtra, India</p>
               <p>
                 <a href="mailto:contact@johndeveloper.com" className="hover:text-primary transition-colors">
-                  contact@johndeveloper.com
+                rohit123nair@gmail.com
                 </a>
               </p>
               <p>
                 <a href="tel:+11234567890" className="hover:text-primary transition-colors">
-                  +1 (123) 456-7890
+                  +918668671077
                 </a>
               </p>
             </address>
@@ -83,11 +82,11 @@ const Footer = () => {
         <div className="border-t border-border/50 pt-6 mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              &copy; {currentYear} John Developer. All rights reserved.
+              &copy; {currentYear} Rohit Nair. All rights reserved.
             </p>
-            <p className="text-muted-foreground text-sm mt-2 md:mt-0">
+            {/* <p className="text-muted-foreground text-sm mt-2 md:mt-0">
               Designed & Built with <span className="text-primary">❤</span>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
